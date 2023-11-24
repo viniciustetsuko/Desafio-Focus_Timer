@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+    <title>Desafio Focus Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+
+      <section class="timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+
+      <section id="controls">
+        <button data-action="toggleRunning" class="ph ph-play-circle"></button>
+        <button data-action="toggleRunning" class="ph ph-pause-circle"></button>
+        <button data-action="set" class="ph ph-timer "></button>
+        <button
+          data-action="reset"
+          class="ph ph-stop-circle"
+        ></button>
+        <button
+          data-action="plusBtn"
+          class="ph ph-plus-circle"
+        ></button>
+        <button data-action="minusBtn" class="ph ph-minus-circle"></button>
+      </section>
+    </div>
+
+    <aside>
+        <section id="controls-music">
+            <button data-action="treeMusic" class="ph ph-tree  secondary"></button>
+            <button data-action="treeMusic" class="ph ph-stop-music  secondary"></button>
+
+            <button data-action="rainMusic" class="ph ph-cloud-rain  secondary"> </button>
+            <button data-action="rainMusic" class="ph ph-stop-music  secondary"> </button>
+
+            <button data-action="coffshopMusic" class="ph ph-coffee  secondary"></button>
+            <button data-action="coffshopMusic" class="ph ph-stop-music  secondary"></button>
+
+            <button data-action="fireplaceMusic" class="ph ph-fire  secondary"></button>
+            <button data-action="fireplaceMusic" class="ph-stop-music  secondary"></button>
+          </section>
+    </aside>
+  </body>
+</html>
